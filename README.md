@@ -203,7 +203,7 @@ Prints:
 ```
 
 
-## Other projects
+## Related projects
 
 * [countries-and-timezones](https://www.npmjs.com/package/countries-and-timezones)
 * [location-by-ip](https://www.npmjs.com/package/location-by-ip)
