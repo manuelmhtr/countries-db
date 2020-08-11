@@ -35,7 +35,7 @@ module.exports = {
     postalCodeFormat: null,
     postalCodeRegex: null,
     phoneCode: null,
-    neighbourCountryIds: [],
+    neighborCountryIds: [],
     languages: [],
     locales: []
   },
@@ -78,7 +78,7 @@ module.exports = {
     postalCodeFormat: '#####',
     postalCodeRegex: '^(\\d{5})$',
     phoneCode: '+52',
-    neighbourCountryIds: [ 'GT', 'US', 'BZ' ],
+    neighborCountryIds: [ 'GT', 'US', 'BZ' ],
     languages: [ 'es' ],
     locales: [ 'es-MX' ]
   },
@@ -107,7 +107,7 @@ module.exports = {
     postalCodeFormat: 'STHL 1ZZ',
     postalCodeRegex: '^(STHL1ZZ)$',
     phoneCode: '+290',
-    neighbourCountryIds: [],
+    neighborCountryIds: [],
     languages: [ 'en' ],
     locales: [ 'en-SH' ]
   }

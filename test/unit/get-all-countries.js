@@ -15,7 +15,6 @@ describe('.getAllCountries', () => {
     expect(countries).to.be.an('object');
     expect(Object.keys(countries).length).to.be.equal(expectedLength);
 
-    console.log(countries);
     Object.values(countries).forEach(expectCountry);
   });
 });
@@ -40,7 +39,7 @@ function expectRequiredProperties(country) {
   expect(country.coordinates.latitude).to.be.an('number');
   expect(country.coordinates.longitude).to.be.an('number');
   expectTimezones(country.timezones);
-  expectNeighbourCountryIds(country.neighbourCountryIds);
+  expectNeighborCountryIds(country.neighborCountryIds);
   expectLanguages(country.languages);
   expectLocales(country.locales);
 }
@@ -70,9 +69,9 @@ function expectTimezones(timezones) {
   });
 }
 
-function expectNeighbourCountryIds(neighbourCountryIds) {
-  expect(neighbourCountryIds).to.be.an('array');
-  neighbourCountryIds.forEach(id => {
+function expectNeighborCountryIds(neighborCountryIds) {
+  expect(neighborCountryIds).to.be.an('array');
+  neighborCountryIds.forEach(id => {
     expectString(id, /^[A-Z]{2}$/);
   });
 }

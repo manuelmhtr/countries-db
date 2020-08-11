@@ -41,7 +41,7 @@ A country is defined by the following parameters:
 |`postalCodeFormat`| String | Format of the postal codes used in the country. |
 |`postalCodeRegex`| String | Regular expression to validate the postal codes used in the country. |
 |`phoneCode`| String | The international phone code to call a number in the country. |
-|`neighbourCountryIds`| Array[String] | A list of ids of the countries that share border with it (neighbours). |
+|`neighborCountryIds`| Array[String] | A list of ids of the countries that share border with it (neighbors). |
 |`languages`| Array[String] | A list of [languages](https://en.wikipedia.org/wiki/List_of_ISO_639-1_codes) spoken in the country. |
 |`locales`| Array[String] | A list of [locales](https://en.wikipedia.org/wiki/Locale_(computer_software)) (language + region) used in the country. |
 
@@ -73,7 +73,7 @@ A country is defined by the following parameters:
   postalCodeFormat: '#####',
   postalCodeRegex: '^(\\d{5})$',
   phoneCode: '+49',
-  neighbourCountryIds: [ 'CH', 'PL', 'NL', 'DK', 'BE', 'CZ', 'LU', 'FR', 'AT' ],
+  neighborCountryIds: [ 'CH', 'PL', 'NL', 'DK', 'BE', 'CZ', 'LU', 'FR', 'AT' ],
   languages: [ 'de' ],
   locales: [ 'de' ]
 }
@@ -144,7 +144,7 @@ Prints:
   postalCodeFormat: '#####',
   postalCodeRegex: '^(\\d{5})$',
   phoneCode: '+52',
-  neighbourCountryIds: [ 'GT', 'US', 'BZ' ],
+  neighborCountryIds: [ 'GT', 'US', 'BZ' ],
   languages: [ 'es' ],
   locales: [ 'es-MX' ]
 }
