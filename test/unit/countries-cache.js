@@ -1,6 +1,6 @@
 const sinon = require('sinon');
 const proxyquire = require('proxyquire');
-const data = require('../../lib/data.json');
+const data = require('../../src/data.json');
 const totalCountries = Object.keys(data).length;
 const buildCountryMock = sinon.spy(function(country) {
   return { id: country.i2 };
@@ -12,28 +12,28 @@ describe('Countries cache', () => {
   beforeEach(() => {
     buildCountryMock.resetHistory();
 
-    countriesDB = proxyquire('../../lib', {
+    countriesDB = proxyquire('../../src', {
       './build-country': buildCountryMock
     });
   });
 
-  it('should call "buildContry" once when requesting a single country', () => {
+  it('should call "buildCountry" once when requesting a single country', () => {
     countriesDB.getCountry('MX');
     expect(buildCountryMock.callCount).to.be.equal(1);
   });
 
-  it('should call "buildContry" once when requesting the same country multiple times', () => {
+  it('should call "buildCountry" once when requesting the same country multiple times', () => {
     countriesDB.getCountry('MX');
     countriesDB.getCountry('MX');
     expect(buildCountryMock.callCount).to.be.equal(1);
   });
 
-  it('should call "buildContry" method once for each country when requesting all', () => {
+  it('should call "buildCountry" method once for each country when requesting all', () => {
     countriesDB.getAllCountries();
     expect(buildCountryMock.callCount).to.be.equal(totalCountries);
   });
 
-  it('should cache all countries to minimize "buildContry" calls', () => {
+  it('should cache all countries to minimize "buildCountry" calls', () => {
     countriesDB.getAllCountries();
     countriesDB.getAllCountries();
     expect(buildCountryMock.callCount).to.be.equal(totalCountries);

@@ -1,5 +1,5 @@
-const data = require('../../lib/data.json');
-const countriesDB = require('../../lib');
+const data = require('../../src/data.json');
+const countriesDB = require('../../dist');
 
 const OPTIONAL_STRINGS = [
   'domain', 'postalCodeFormat', 'postalCodeRegex', 'phoneCode', 'currencyCode', 'currencyName'

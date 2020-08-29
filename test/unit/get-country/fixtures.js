@@ -18,11 +18,11 @@ module.exports = {
       longitude: -135
     },
     timezones: [
+      'Antarctica/McMurdo',
       'Antarctica/Casey',
       'Antarctica/Davis',
       'Antarctica/DumontDUrville',
       'Antarctica/Mawson',
-      'Antarctica/McMurdo',
       'Antarctica/Palmer',
       'Antarctica/Rothera',
       'Antarctica/Syowa',
@@ -58,19 +58,22 @@ module.exports = {
       longitude: -102
     },
     timezones: [
+      "Mexico/BajaSur",
+      "Mexico/General",
+      "America/Ensenada",
+      "America/Santa_Isabel",
+      "Mexico/BajaNorte",
       'America/Bahia_Banderas',
       'America/Cancun',
       'America/Chihuahua',
-      'America/Ensenada',
+      'America/Tijuana',
       'America/Hermosillo',
       'America/Matamoros',
       'America/Mazatlan',
       'America/Merida',
       'America/Mexico_City',
       'America/Monterrey',
-      'America/Ojinaga',
-      'America/Santa_Isabel',
-      'America/Tijuana'
+      'America/Ojinaga'
     ],
     domain: '.mx',
     currencyCode: 'MXN',

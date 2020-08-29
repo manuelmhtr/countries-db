@@ -1,4 +1,4 @@
-const countriesDB = require('../../../lib');
+const countriesDB = require('../../../dist');
 const fixtures = require('./fixtures');
 
 describe('.getCountry', () => {
